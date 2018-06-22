@@ -1,0 +1,12 @@
+<nav class="navbar navbar-inverse nav-justified">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">      
+      <li class="<%= current_class?('/offers/new')%>">
+        <%= link_to "New", '/offers/new', controller: "offers", action: "new", class: current_class?('/offers/new') %>
+      </li>
+      <li class="<%= current_class?('/offers') %>">
+        <%= link_to "View all offers", '/offers', controller: "offers", action: "show", class: "active" %></td>
+      </li>      
+    </ul>
+  </div>
+</nav>
